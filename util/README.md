@@ -8,7 +8,7 @@ OS: Linux, MacOS and Windows
 -----------
 Graph format basics
 ----------------------
-![Alt text](/images/intr_graph.png)
+![Alt text](/util/images/intr_graph.png)
 
 Given a graph G = (V, E, W), as shown in (a), mainstream storage formats are (b) edge (tuple) list format and (c) *Compressed sparse row* (CSR) format. Note, V, E and W stand for the sets of vertices, edges and weights of the graph G, respectively.
 
@@ -16,8 +16,8 @@ Given a graph G = (V, E, W), as shown in (a), mainstream storage formats are (b)
 
 In summary, CSR space consumptions are: 
 - Begin position: |V| + 1 entries.
-- Adjacency list: |E| entries. 
-- Weight list: |E| entries.
+- Adjacency list: 2*|E| entries.
+- Weight list: 2*|E| entries.
 
 
 -----
